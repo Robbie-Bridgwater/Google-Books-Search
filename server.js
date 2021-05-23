@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3000;
 // SET-UP DATA PARSING (MIDDLEWARE)
 APP.use(express.urlencoded({ extended: true }));
 APP.use(express.json());
-// SET-UP STATIC ASSETTS
+// SET-UP STATIC ASSETS
 if (process.env.NODE_ENV === 'production') {
     APP.use(express.static('client/build'));
 }
