@@ -25,7 +25,7 @@ const SavedBookCard = () => {
     };
     const response = await fetch(queryURL, config);
     const payload = await response.json();
-    console.log("book deleted to db", payload);
+    return payload
   };
 
   return (
