@@ -1,10 +1,11 @@
+// DEPENDENCIES
 const express = require('express');
 const mongoose = require('mongoose');
 const routes = require('./routes/API.js')
 
+// SET-UP EXPRESS APP
 const APP = express();
-const PORT = process.env.PORT || 3000;
-
+const PORT = process.env.PORT || 3001;
 
 // SET-UP DATA PARSING (MIDDLEWARE)
 APP.use(express.urlencoded({ extended: true }));

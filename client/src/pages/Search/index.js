@@ -1,13 +1,14 @@
 import React from "react";
-// import SearchForm from "../../components/SearchForm";
+import Jumbotron from '../../components/Jumbotron'
+import SearchForm from "../../components/SearchForm";
+
 
 const Search = () => {
     return (
-
         <div>
-            {/* <SearchForm />        */}
+            <Jumbotron />
+            <SearchForm />
         </div>
-
     );
 };
 
