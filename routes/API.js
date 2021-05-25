@@ -8,6 +8,7 @@ router.get("/api/books", async(req, res) => {
         const allBooks = await Book.find();
         res.status(200).json(allBooks);
     } catch (err) {
+        console.log(err);
         res.status(404).json(err);
     }
 });
@@ -18,6 +19,7 @@ router.post("/api/books", async({ body }, res) => {
         const savedBook = await Book.create(body);
         res.status(200).json(savedBook);
     } catch (err) {
+        console.log(err);
         res.status(404).json(err);
     }
 });
@@ -30,6 +32,7 @@ router.delete("/api/books/:id", async(req, res) => {
         const deletedBook = await bookQuery.remove();
         res.status(200).json(deletedBook);
     } catch (err) {
+        console.log(err);
         res.status(404).json(err);
     }
 });
