@@ -28,10 +28,6 @@ mongoose.connect(
     }
 );
 
-APP.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "./client/build/index.html"));
-});
-
 // START SERVER LISTENING
 APP.listen(PORT, () => {
     console.log(`Server listening on https://localhost:${PORT}`)
