@@ -3,7 +3,7 @@ const router = express.Router();
 const Book = require('../../models/book');
 
 // GET ALL BOOKS
-router.get("/api/books", async(req, res) => {
+router.get("/books", async(req, res) => {
     try {
         const allBooks = await Book.find();
         res.status(200).json(allBooks);
@@ -14,7 +14,7 @@ router.get("/api/books", async(req, res) => {
 });
 
 // SAVE A BOOK
-router.post("/api/books", async({ body }, res) => {
+router.post("/books", async({ body }, res) => {
     try {
         const savedBook = await Book.create(body);
         res.status(200).json(savedBook);
@@ -25,7 +25,7 @@ router.post("/api/books", async({ body }, res) => {
 });
 
 // DELETE BOOK BY ID
-router.delete("/api/books/:id", async(req, res) => {
+router.delete("/books/:id", async(req, res) => {
     const id = req.params.id;
     try {
         const bookQuery = await Book.findById({ _id: id });
