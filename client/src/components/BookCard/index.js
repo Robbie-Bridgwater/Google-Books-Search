@@ -24,7 +24,8 @@ const BookCard = ({ books, saveBook }) => {
                     book.volumeInfo.authors.length > 1
                     ? book.volumeInfo.authors.join(", ")
                     : book.volumeInfo.authors}
-                    <small className="text-muted">{book.volumeInfo.publishedDate}</small>
+                    {book.volumeInfo.description}
+                    <small className="text-muted"><br></br>{book.volumeInfo.publishedDate}</small>
                 </Card.Text>
                 <Button variant="secondary" href={book.volumeInfo.previewLink}>View on Google Books</Button>{" "}
                 <Button variant="success" onClick={() => saveBook(book)}>Save Book</Button>

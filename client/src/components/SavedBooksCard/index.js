@@ -42,6 +42,7 @@ const SavedBookCard = () => {
                   Written by:{" "}
                   {book.authors && book.authors.length > 1
                   ? book.authors.join(", ") : book.authors}
+                    {book.description}
                 </Card.Text>
                 <Button variant="secondary" href={book.link}>View on Google Books</Button>{" "}
                 <Button variant="danger" onClick={() => deleteBook(book._id)}>delete book</Button>
