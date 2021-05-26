@@ -1,7 +1,7 @@
 // DEPENDENCIES
 const express = require('express');
 const mongoose = require('mongoose');
-const routes = require('./routes/API.js')
+const routes = require('./routes')
 
 // SET-UP EXPRESS APP
 const APP = express();
