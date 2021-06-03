@@ -13,7 +13,7 @@ Section | Description
 [Questions](#Questions?) | Where you can reach me
 
 ## Deployment
-OPEN GOOGLE-BOOKS-APP ---> [HERE](https://dashboard.heroku.com/apps/g00gle-books-app)
+OPEN GOOGLE-BOOKS-APP ---> [HERE](https://g00gle-books-app.herokuapp.com/)
 
 ## Technologies Used
 
